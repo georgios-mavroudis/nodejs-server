@@ -13,10 +13,12 @@ exports.getNotifs = (req, res) => {
     //     query: req.query,
     //     params: req.params, 
     // }) 
-    res.render('secret.hbs', { body })
+    // res.render('secret.hbs', { body })
     // res.status(200).send('RECEIVED')
+    res.send({ giorg: req.query })
 }
 
 exports.home = (req, res) => {
-    res.render('home.hbs')
+    res.send({ howdy: 'hi'})
+    // res.render('home.hbs')
 }
